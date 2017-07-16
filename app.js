@@ -17,8 +17,9 @@ var commentRoutes       = require("./routes/comments"),
     indexRoutes         = require("./routes/index");
     
 //setting up mongoose (connecting to mongoDB and creating the database)
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
-mongoose.connect(url);
+// var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
+// mongoose.connect(url);
+mongoose.connect("mongodb://David:206086290@ds161505.mlab.com:61505/yelp_camp");
 mongoose.Promise = global.Promise;
 
 // body parser allows to see the element value from the form
