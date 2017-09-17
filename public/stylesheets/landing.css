@@ -14,6 +14,16 @@ body{
 }
 
 
+.header{
+  font-family: lobster;
+  font-size:4em;
+  margin-bottom: 2%;
+}
+.link{
+  font-size: 2em;
+  font-family: lobster;
+}
+
 .slideshow { 
   position: fixed;
   width: 100%;
