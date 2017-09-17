@@ -3,10 +3,10 @@
 <div class="container">
     <header class="jumbotron">
         <div class ="container">
-        <h1>Welcome to YelpCamp!</h1>
-        <p>View our hand-picked campgrounds from all over the World!</p>
-        <p>
-            <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Campground</a>
+        <h1 class="text-center">Welcome to YelpCamp!</h1>
+        <p class="text-center">A gallery displaying beautiful stock photos</p>
+        <p class="text-center">
+            <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Photo</a>
         </p>
         </div>
     </header>
@@ -14,16 +14,19 @@
     <!--<div class="row" style="flex-wrap: wrap">-->
     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
         <% campgrounds.forEach(function(campground){ %>
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnail">
-                    <img src="<%= campground.image %>">
-                    <div class="caption">
-                        <h4><%= campground.name %> </h4>
-                    </div>
-                    <p>
-                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Details</a>
-                    </p>
-                </div>
+            <div class="col-md-4  col-lg-4 col-sm-6 container2">
+
+                    <a href="/campgrounds/<%= campground._id %>">
+                        <div class="imgthumbnail">
+                            <img src="<%= campground.image %>">
+                        </div>    
+    
+                        <div class="overlay">
+                            <div class="text"><%= campground.name %></div>
+                        </div>
+                    </a>                    
+
+
             </div>
         <% }); %>
     </div>

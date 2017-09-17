@@ -19,12 +19,11 @@ var commentRoutes       = require("./routes/comments"),
 
 //setting up mongoose (connecting to mongoDB and creating the database)
 mongoose.connect(process.env.DATABASEURL);
-mongoose.connect("mongodb://David:206086290@ds161505.mlab.com:61505/yelp_camp");
 
 mongoose.Promise = global.Promise;
 
 // body parser allows to see the element value from the form
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));   
 app.set("view engine", "ejs"); // does not need to include ejs extention
 app.use(express.static(__dirname + "/public")); // uses the css stylesheet
 app.use(methodOverride("_method"));
@@ -67,6 +66,7 @@ app.use("/campgrounds",campgroundRoutes);
 app.listen(process.env.PORT , process.env.IP, function(){
     console.log("YelpCamp Has started!!!");
 });
+
 
 
 
