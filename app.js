@@ -8,8 +8,8 @@ var express         = require("express"),
     Campground      = require("./models/campground"),
     methodOverride  = require("method-override"),
     Comment         = require("./models/comment"),
-    User            = require("./models/user"),
-    seedDB          = require("./seeds");
+    User            = require("./models/user");
+    // seedDB          = require("./seeds");
 
 // REQUIRING ROUTES FROM THE EXPORTS
 var commentRoutes       = require("./routes/comments"),
@@ -19,7 +19,6 @@ var commentRoutes       = require("./routes/comments"),
 
 //setting up mongoose (connecting to mongoDB and creating the database)
 mongoose.connect(process.env.DATABASEURL);
-
 mongoose.Promise = global.Promise;
 
 // body parser allows to see the element value from the form

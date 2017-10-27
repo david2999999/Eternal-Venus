@@ -45,19 +45,20 @@
 .overlay {
   position: absolute;
   bottom: 100%;
-  left: 0;
-  right: 0;
+  /*left: 0;*/
+  /*right: 0;*/
   background-color: #00e6ac;
   overflow: hidden;
   height: 0;
   transition: .5s ease;
-    width: 93%;
+  width: 100%;
 }
 
 .container2:hover .overlay {
   bottom: 0;
   height: 500px;
   opacity: .8;
+  width: 100%;
 }
 
 .text {
@@ -74,50 +75,63 @@
 }
 
 
-
-@media (min-width: 375px){
-    .overlay {
-          position: absolute;
-          bottom: 100%;
-          left: 0;
-          right: 0;
-          background-color: #00e6ac;
-          overflow: hidden;
-          height: 0;
-          transition: .5s ease;
-            width: 96%;
-            margin-left: 2%;
-        }
-
+.item{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    /*margin: 10px 1%;*/
+    /*min-width: 300px;*/
+    /*max-width: 620px;*/
+    height: 500px;
+    background: #000000;
+    text-align: center;
+    width: 100%;
 }
 
-@media (min-width: 768px) {
-    .overlay {
-          position: absolute;
-          bottom: 100%;
-          left: 3;
-          right: 0;
-          background-color: #00e6ac;
-          overflow: hidden;
-          height: 0;
-          transition: .5s ease;
-            width: 93%;
-            margin-left: 13px;
-        }
 
-}
+/*@media (min-width: 375px){*/
+/*    .overlay {*/
+/*          position: absolute;*/
+/*          bottom: 100%;*/
+/*          left: 0;*/
+/*          right: 0;*/
+/*          background-color: #00e6ac;*/
+/*          overflow: hidden;*/
+/*          height: 0;*/
+/*          transition: .5s ease;*/
+/*            width: 96%;*/
+/*            margin-left: 2%;*/
+/*        }*/
 
-@media (min-width: 992px) {
-    .overlay {
-          position: absolute;
-          bottom: 100%;
-          left: 3;
-          right: 0;
-          background-color: #00e6ac;
-          overflow: hidden;
-          height: 0;
-          transition: .5s ease;
-            width: 93%;
-            margin-left: 13px;
-        }
-}
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .overlay {*/
+/*          position: absolute;*/
+/*          bottom: 100%;*/
+/*          left: 3;*/
+/*          right: 0;*/
+/*          background-color: #00e6ac;*/
+/*          overflow: hidden;*/
+/*          height: 0;*/
+/*          transition: .5s ease;*/
+/*            width: 93%;*/
+/*            margin-left: 13px;*/
+/*        }*/
+
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*    .overlay {*/
+/*          position: absolute;*/
+/*          bottom: 100%;*/
+/*          left: 3;*/
+/*          right: 0;*/
+/*          background-color: #00e6ac;*/
+/*          overflow: hidden;*/
+/*          height: 0;*/
+/*          transition: .5s ease;*/
+/*            width: 93%;*/
+/*            margin-left: 13px;*/
+/*        }*/
+/*}*/
