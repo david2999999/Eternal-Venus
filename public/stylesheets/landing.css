@@ -51,22 +51,22 @@ body{
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_960_720.jpg) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/05/14/00/aurora-borealis-1181004_960_720.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/04/01/00/08/toronto-1298016_960_720.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/23/17/05/ulm-1690078_960_720.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/16/17/12/rotterdam-1598418_960_720.jpg);
   animation-delay: 40s; 
 }
 
